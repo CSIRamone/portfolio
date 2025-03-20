@@ -11,7 +11,7 @@ const common_1 = require("@nestjs/common");
 const _core_1 = require("../../core/src");
 let AppService = class AppService {
     getHello() {
-        return 'Hello World!' + _core_1.x;
+        return 'Hello World!' + _core_1.Id.gerar();
     }
 };
 exports.AppService = AppService;
