@@ -6,19 +6,12 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.ProjetoModule = void 0;
+exports.ProjetoProvider = void 0;
 const common_1 = require("@nestjs/common");
-const projeto_prisma_1 = require("./projeto.prisma");
-const db_module_1 = require("../db/db.module");
-const projeto_controller_1 = require("./projeto.controller");
-let ProjetoModule = class ProjetoModule {
+let ProjetoProvider = class ProjetoProvider {
 };
-exports.ProjetoModule = ProjetoModule;
-exports.ProjetoModule = ProjetoModule = __decorate([
-    (0, common_1.Module)({
-        providers: [projeto_prisma_1.ProjetoPrisma],
-        controllers: [projeto_controller_1.ProjetoController],
-        imports: [db_module_1.DbModule],
-    })
-], ProjetoModule);
-//# sourceMappingURL=projeto.module.js.map
+exports.ProjetoProvider = ProjetoProvider;
+exports.ProjetoProvider = ProjetoProvider = __decorate([
+    (0, common_1.Injectable)()
+], ProjetoProvider);
+//# sourceMappingURL=projeto.provider.js.map

@@ -9,7 +9,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.TecnologiaModule = void 0;
 const common_1 = require("@nestjs/common");
 const tecnologia_controller_1 = require("./tecnologia.controller");
-const tecnologia_provider_1 = require("./tecnologia.provider");
+const tecnologia_prisma_1 = require("./tecnologia.prisma");
 const db_module_1 = require("../db/db.module");
 let TecnologiaModule = class TecnologiaModule {
 };
@@ -17,7 +17,7 @@ exports.TecnologiaModule = TecnologiaModule;
 exports.TecnologiaModule = TecnologiaModule = __decorate([
     (0, common_1.Module)({
         controllers: [tecnologia_controller_1.TecnologiaController],
-        providers: [tecnologia_provider_1.TecnologiaProvider],
+        providers: [tecnologia_prisma_1.TecnologiaPrisma],
         imports: [db_module_1.DbModule],
     })
 ], TecnologiaModule);

@@ -4,7 +4,7 @@ import { Tecnologia } from '@core';
 
 
 @Injectable()
-export class TecnologiaProvider {
+export class TecnologiaPrisma {
     constructor(private readonly prisma: PrismaProvider) {}
 
     async obterTodas(): Promise<Tecnologia[]> {

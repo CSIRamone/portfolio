@@ -1,8 +1,8 @@
 import { Tecnologia } from '@core';
-import { TecnologiaProvider } from './tecnologia.provider';
+import { TecnologiaPrisma } from './tecnologia.prisma';
 export declare class TecnologiaController {
     private readonly repo;
-    constructor(repo: TecnologiaProvider);
+    constructor(repo: TecnologiaPrisma);
     obterTodas(): Promise<Tecnologia[]>;
     obterDestaques(): Promise<Tecnologia[]>;
 }
