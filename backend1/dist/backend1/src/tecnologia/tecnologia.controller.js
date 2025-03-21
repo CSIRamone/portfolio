@@ -20,6 +20,9 @@ let TecnologiaController = class TecnologiaController {
     async obterTodas() {
         return this.repo.obterTodas();
     }
+    async obterDestaques() {
+        return this.repo.obterDestaques();
+    }
 };
 exports.TecnologiaController = TecnologiaController;
 __decorate([
@@ -28,6 +31,12 @@ __decorate([
     __metadata("design:paramtypes", []),
     __metadata("design:returntype", Promise)
 ], TecnologiaController.prototype, "obterTodas", null);
+__decorate([
+    (0, common_1.Get)('destaques'),
+    __metadata("design:type", Function),
+    __metadata("design:paramtypes", []),
+    __metadata("design:returntype", Promise)
+], TecnologiaController.prototype, "obterDestaques", null);
 exports.TecnologiaController = TecnologiaController = __decorate([
     (0, common_1.Controller)('tecnologias'),
     __metadata("design:paramtypes", [tecnologia_provider_1.TecnologiaProvider])

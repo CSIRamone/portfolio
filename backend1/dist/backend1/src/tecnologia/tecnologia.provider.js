@@ -20,6 +20,13 @@ let TecnologiaProvider = class TecnologiaProvider {
     async obterTodas() {
         return this.prisma.tecnologia.findMany();
     }
+    async obterDestaques() {
+        return this.prisma.tecnologia.findMany({
+            where: {
+                destaque: true
+            }
+        });
+    }
 };
 exports.TecnologiaProvider = TecnologiaProvider;
 exports.TecnologiaProvider = TecnologiaProvider = __decorate([

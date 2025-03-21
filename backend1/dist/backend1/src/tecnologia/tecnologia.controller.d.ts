@@ -4,4 +4,5 @@ export declare class TecnologiaController {
     private readonly repo;
     constructor(repo: TecnologiaProvider);
     obterTodas(): Promise<Tecnologia[]>;
+    obterDestaques(): Promise<Tecnologia[]>;
 }
